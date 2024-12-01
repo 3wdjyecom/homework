@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="current-date">九年一班九年二班作业</title>
+</head>
+<body>
+    <h1 style="text-align: center;">A班</h1>
+    <h3 style="color: brown;">理科</h3>
+    <br>数学：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>《能力培养》P157-P162</label>
+    <br>物理：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>《能力培养》P117-P118  1-6题</label>
+    <br>化学：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>《分层》P111-P116</label>
+    <h3 style="color: brown;">文科</h3>
+    <br>英语：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1.M11U3卷纸</label>
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>2.背M12单词,词组</label>
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>3.M11知识点大卷</label>
+    <br>语文：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1.抄写《出师表》所有书下注释</label>
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>2.整理《出师表》译文</label>
+    <br>历史：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1.三张卷</label>
+    
+    <h1 style="text-align: center;">B班</h1>
+    <h3 style="color: brown;">理科</h3>
+    <br>数学：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1、校本P12页写完</label>
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>2、书上P36-2写过程</label>
+    <h3 style="color: brown;">文科</h3>
+    <br>语文：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1.大卷P4页《回家路上》完成</label>
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>2.背《曹刿论战》第一段.周二考</label>
+    <br>历史：
+    <br><input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label>1.卷子专题05世界近代史19~12</label>
+    <!--日期计算-->
+    <script>
+        function displayCurrentDate() {
+          var currentDate = new Date();
+          var dateString = currentDate.toLocaleDateString();
+          document.getElementById("current-date").innerHTML =  dateString + '日九年一九年二班作业';
+        }
+      </script>
+      </head>
+      <body onload="displayCurrentDate()">
+        
+</body>
+
+</html>
