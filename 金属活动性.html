@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金属活动性</title>
+    <style>
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip:hover::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        .tooltip:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body><h2>金属活动性</h2>
+    <div style="text-align: center;">
+        <span class="tooltip" data-tooltip="钾；原子序数：19；相对原子质量：39.098；熔点：63℃；沸点：1,737℃">K</span>
+        →
+        <span class="tooltip" data-tooltip="钙；原子序数：20；相对原子质量：40.078；熔点：842℃；沸点：1484℃">Ca</span>
+        →
+        <span class="tooltip" data-tooltip="钠；原子序数：11；相对原子质量：22.990；熔点：97.720℃；沸点：882.9℃">Na</span>
+        →
+        <span class="tooltip" data-tooltip="镁；原子序数：12；相对原子质量：24.305；熔点：650℃；沸点：1,090℃">Mg</span>
+        →
+         <span class="tooltip" data-tooltip="铝；原子序数：13；相对原子质量：26.982；熔点：660.32℃；沸点：2,519℃">Al</span>
+        →
+        <span class="tooltip" data-tooltip="锌；原子序数：30；相对原子质量：65.38；熔点：419.53℃；沸点：906.9℃">Zn</span>
+        →
+        <span class="tooltip" data-tooltip="铁；原子序数：26；相对原子质量：55.845；熔点：1538℃；沸点：2861℃">Fe</span>
+        →
+        <span class="tooltip" data-tooltip="锡；原子序数：50；相对原子质量：118.71；熔点：231.93℃；沸点：2602℃">Sn</span>
+        →
+        <span class="tooltip" data-tooltip="铅；原子序数：82；相对原子质量：207.2；熔点：327.46℃；沸点：1749℃">Pb</span>
+        →
+        <span class="tooltip" data-tooltip="氢；原子序数：1；相对原子质量：1.08；熔点：-259.1℃；沸点：-252.9℃">H(分界线)</span>
+        →
+        <span class="tooltip" data-tooltip="铜；原子序数：29；相对原子质量：63.546；熔点：1084.52℃；沸点：2562℃">Cu</span>
+        →
+        <span class="tooltip" data-tooltip="汞；原子序数：80；相对原子质量：200.59；熔点：-38.830℃；沸点：356.73℃">Hg</span>
+        →
+        <span class="tooltip" data-tooltip="银；原子序数：47；相对原子质量：107.87；熔点：961.780℃；沸点：2162℃">Ag</span>
+        →
+        <span class="tooltip" data-tooltip="铂；原子序数：78；相对原子质量：195.08；熔点：1768.3℃；沸点：3825℃">Pt</span>
+        →
+        <span class="tooltip" data-tooltip="金；原子序数：79；相对原子质量：196.97；熔点：1064.18℃；沸点：2856℃">Au</span>
+    </div>
+</body>
+</html>
